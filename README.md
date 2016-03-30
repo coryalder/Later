@@ -17,6 +17,8 @@ Make a synchronous operation synchronous. Abstracts away the details of dispatch
     
     later.wait() // while the async operation is completing, let's chill for up to 3s
 
+A delay timeout of 0 means wait forever.
+
 ## Installation
 
 ### Swift Package Manager
