@@ -3,21 +3,6 @@
 
 Make a synchronous operation synchronous. Abstracts away the details of dispatch_semaphore_wait et al. so you don't have to worry about it.
 
-## Installation
-
-### Swift Package Manager
-
-Add Later to your `Package.swift` file:
-
-    import PackageDescription
-
-    let package = Package(
-        name: "YourPackageName",
-        dependencies: [
-            .Package(url: "https://github.com/coryalder/Later.git", majorVersion: 0),
-        ]
-    )
-
 ## Usage
 
     import Later
@@ -32,6 +17,20 @@ Add Later to your `Package.swift` file:
     
     later.wait() // while the async operation is completing, let's chill for up to 3s
 
+## Installation
+
+### Swift Package Manager
+
+Add Later to your `Package.swift` file:
+
+    import PackageDescription
+
+    let package = Package(
+        name: "YourPackageName",
+        dependencies: [
+            .Package(url: "https://github.com/coryalder/Later.git", majorVersion: 0),
+        ]
+    )
 
 
 
