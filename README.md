@@ -20,8 +20,6 @@ Add Later to your `Package.swift` file:
 
 ## Usage
 
-### Struct Style
-
     import Later
     
     let later = Later(3) // default delay is 5s
