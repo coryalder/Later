@@ -3,7 +3,7 @@ import Foundation
 
 public struct Later {
   let timeout: Int64
-  let semaphore = dispatch_semaphore_create(0)
+  let semaphore = dispatch_semaphore_create(0)!
   
   public init(_ timeout: Int64 = 5) {
     self.timeout = timeout * Int64(NSEC_PER_SEC)
